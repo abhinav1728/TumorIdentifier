@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  background: url("banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #03dac6;
+}
+
+.upload-box {
+  margin: 20px 0;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+}
+
+#preview {
+  margin-top: 15px;
+  max-width: 100%;
+  max-height: 250px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: #03dac6;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00c4b4;
+}
+
+.result-box {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    min-height: 600px;
+    padding: 40px 20px;
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .result-box {
+    font-size: 16px;
+  }
+
+  #preview {
+    max-height: 200px;
+  }
+}
